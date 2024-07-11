@@ -1,1 +1,1 @@
-docker run -dit --name devbox --mount type=bind,source="$(pwd)"/src,target=/app,readonly python:3.12.4
+docker run -i --name devbox -p 8080:8080 -v "$(pwd)/src":"/app" joanmaillard/dorapp
