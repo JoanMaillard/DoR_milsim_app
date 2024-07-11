@@ -1,0 +1,1 @@
+docker run -dit --name devbox --mount type=bind,source="$(pwd)"/src,target=/app,readonly python:3.12.4
